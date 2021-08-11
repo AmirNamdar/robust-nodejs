@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node dist/server.js",
-    "build-ts": "npm run clear-dist && tsc",
+    "build-ts": "npm run clear-dist && tsc --build ./config/tsconfig.json",
     "build": "npm run lint && npm run build-ts",
     "debug": "npm run build-ts && npm run watch-debug",
     "lint": "eslint --config config/eslintrc.js \"**/*.{js,ts}\" --quiet --fix",
