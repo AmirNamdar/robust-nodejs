@@ -4,7 +4,16 @@
   "description": "robust production grade nodejs starter template",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/server.js",
+    "build-ts": "npm run clear-dist && tsc",
+    "build": "npm run lint && npm run build-ts",
+    "debug": "npm run build-ts && npm run watch-debug",
+    "lint": "eslint --config config/eslintrc.js \"**/*.{js,ts}\" --quiet --fix",
+    "test": "jest --forceExit --coverage --verbose",
+    "watch-debug": "concurrently -k -t -p \"[{name}]\" -n \"TypeScriptCompiler ,NodeServer\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
+    "watch-node": "nodemon --config ./config/nodemon.json --inspect dist/server.js",
+    "watch-ts": "tsc -w",
+    "clear-dist": "./scripts/build/clear_dist_folder.sh"
   },
   "repository": {
     "type": "git",
