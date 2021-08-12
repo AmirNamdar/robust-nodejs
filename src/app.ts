@@ -1,8 +1,7 @@
-import { UncaughtEventsHandler }    from './utils/serverUtils';
-UncaughtEventsHandler.registerAllHandlers();
 import * as Routers                 from './services/routers';
 import express                      from 'express';
 import cors                         from 'cors';
+
 
 const app = express();
 // Middlewares

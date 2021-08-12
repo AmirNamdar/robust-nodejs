@@ -1,4 +1,5 @@
-
+import { getRepository }    from "typeorm";
+import { User }             from './user.entity';
 class UsersService {
 
     public async getUser() {

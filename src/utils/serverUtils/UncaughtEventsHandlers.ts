@@ -2,6 +2,7 @@ export class UncaughtEventsHandler {
     
     public static registerAllHandlers() {
         UncaughtEventsHandler.registerUncaughtExceptionHandler();
+        UncaughtEventsHandler.registerUncaughtRejectionHandler();
     }
 
     public static registerUncaughtExceptionHandler() {

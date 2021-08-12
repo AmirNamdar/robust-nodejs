@@ -15,6 +15,7 @@ services:
       - POSTGRES_PASSWORD=mysecretpassword
     volumes:
       - database-data:/var/lib/postgresql/data/
+  
   robust-nodejs-elasticsearch:
     container_name: robust-nodejs-elasticsearch-local
 
