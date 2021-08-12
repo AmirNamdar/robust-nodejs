@@ -5,6 +5,14 @@ services:
     container_name: robust-nodejs-backend-local
     ports:
       - 8080:3000
+  
+  robust-nodejs-db:
+    image: "postgres:13"
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=mysecretpassword
+
   robust-nodejs-elasticsearch:
     container_name: robust-nodejs-elasticsearch-local
 
