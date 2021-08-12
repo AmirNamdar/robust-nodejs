@@ -13,7 +13,8 @@ services:
       - 5432:5432
     environment:
       - POSTGRES_PASSWORD=mysecretpassword
-
+    volumes:
+      - database-data:/var/lib/postgresql/data/
   robust-nodejs-elasticsearch:
     container_name: robust-nodejs-elasticsearch-local
 
@@ -24,6 +25,5 @@ services:
     container_name: robust-nodejs-kibana-local
 
 
-# networks:
-#   myapp_network:
-#     name: myapp_network
+volumes:
+  database-data:
