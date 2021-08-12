@@ -13,7 +13,10 @@
     "watch-debug": "concurrently -k -t -p \"[{name}]\" -n \"TypeScriptCompiler ,NodeServer\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
     "watch-node": "nodemon --config ./config/nodemon.json --inspect dist/server.js",
     "watch-ts": "tsc --build ./config/tsconfig.ts -w",
-    "clear-dist": "./scripts/build/clear_dist_folder.sh"
+    "clear-dist": "./scripts/build/clear_dist_folder.sh",
+    "docker-up": "docker-compose -f environment/docker/docker-compose.yml -f environment/docker/docker-compose.override.yml up -d",
+    "docker-down": "docker-compose -f environment/docker/docker-compose.yml down",
+    "docker-logs": "docker-compose -f environment/docker/docker-compose.yml logs -f"
   },
   "repository": {
     "type": "git",

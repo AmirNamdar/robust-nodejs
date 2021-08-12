@@ -1,0 +1,6 @@
+version: '3.1'
+
+services:
+
+  myapp-backend:
+    image: myapp-backend:latest

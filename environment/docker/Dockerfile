@@ -1,8 +1,8 @@
 FROM node:16
 
-WORKDIR /usr/crafty
+WORKDIR /usr/robust_app
 
-COPY package*.json ./
+COPY ./package*.json ./
 
 RUN npm ci --only=production
 
