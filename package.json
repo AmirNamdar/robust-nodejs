@@ -14,8 +14,8 @@
     "watch-node": "nodemon --config ./config/nodemon.json --inspect dist/server.js",
     "watch-ts": "tsc --build ./config/tsconfig.ts -w",
     "clear-dist": "./scripts/build/clear_dist_folder.sh",
-    "docker-up": "docker-compose -f environment/docker/docker-compose.yml -f environment/docker/docker-compose.override.yml --env-file ./.env up -d",
-    "docker-down": "docker-compose -f environment/docker/docker-compose.yml down",
+    "docker-up": "docker-compose -f environment/docker/docker-compose.yml -f environment/docker/docker-compose.override.yml -f environment/docker/docker-compose.elk.yml --env-file ./.env up -d",
+    "docker-down": "docker-compose -f environment/docker/docker-compose.yml -f environment/docker/docker-compose.override.yml -f environment/docker/docker-compose.elk.yml down",
     "docker-logs": "docker-compose -f environment/docker/docker-compose.yml logs -f"
   },
   "repository": {

@@ -4,7 +4,7 @@
 #
 server.name: nodejs-robus-kibana-docker
 server.host: 0.0.0.0
-elasticsearch.hosts: [ "http://robust-nodejs-kibana:9200" ]
+elasticsearch.hosts: [ "http://robust-nodejs-elasticsearch:9200" ]
 monitoring.ui.container.elasticsearch.enabled: true
 
 elasticsearch.username: elastic
