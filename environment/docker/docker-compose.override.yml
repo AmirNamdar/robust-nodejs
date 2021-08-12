@@ -1,10 +1,19 @@
 version: '3.1'
 
 services:
-  myapp-backend:
-    container_name: my_app_backend_compose
+  robust-nodejs-backend:
+    container_name: robust-nodejs-backend-local
     ports:
       - 8080:3000
+  robust-nodejs-elasticsearch:
+    container_name: robust-nodejs-elasticsearch-local
+
+  robust-nodejs-logstash:
+    container_name: robust-nodejs-logstash-local
+
+  robust-nodejs-kibana:
+    container_name: robust-nodejs-kibana-local
+
 
 # networks:
 #   myapp_network:
