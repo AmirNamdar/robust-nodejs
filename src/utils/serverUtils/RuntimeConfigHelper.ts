@@ -1,13 +1,18 @@
-import process from 'process';
+import { Config }       from '../config/Config';
+import { ServerConfig } from '../config/ConfigBuilder';
 
 export class RuntimeConfigHelper {
+    
+    private static config: ServerConfig = Config.getServerConfig();
+    
     public static setProcessName() {
-        const procName = process.env.PROC_NAME || 'my_robust_server';
+        const procName = RuntimeConfigHelper.config.procName || 'my_robust_server';
         process.title = procName;
     }
 
     public static getPort() {
-        return process.env.PORT || 3000;
+        const listenPort = RuntimeConfigHelper.config.listenPort || 'my_robust_server';
+        return listenPort || 3000;
     }
 
     public static getRunMode() {

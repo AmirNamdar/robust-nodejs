@@ -50,12 +50,14 @@
     "typescript": "^4.3.5"
   },
   "dependencies": {
+    "@types/yamljs": "^0.2.31",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "lodash": "^4.17.21",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.36"
+    "typeorm": "^0.2.36",
+    "yamljs": "^0.3.0"
   }
 }

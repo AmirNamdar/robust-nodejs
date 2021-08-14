@@ -1,0 +1,20 @@
+{
+    "server": {
+        "listen_port": 3000,
+        "proc_name": "nodejs-robust-server"
+    },
+    "dal": {
+        "type": "postgres",
+        "host": "localhost",
+        "port": 5432,
+        "username": "postgres",
+        "password": "mysecretpassword",
+        "database": "postgres",
+        "entities": [
+            "dist/**/**.entity.js"
+        ],
+        "synchronize": true,
+        "logging": "all"
+    }
+    
+}
