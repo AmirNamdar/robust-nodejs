@@ -1,5 +1,9 @@
 # Robust Node.js
 
+## This Is A Work In Progress ⚠️
+I'd be happy to colabrate with you so we can kill the roadmap items asap.
+amirnamdarx@gmail.com
+
 ## Introduction
 The purpose of this project is to provide a refernece point on how one might design and implement all aspects of a robust, production-grade Node.js applications.
 Although the solutions presented below were subjected to careful research, and are battle tested, by no means they are the be-all-and-end-all solution. Applications requirments will very by the use case they intednded to serve.
