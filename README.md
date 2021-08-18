@@ -14,11 +14,26 @@ Although the solutions presented below were subjected to careful research, and a
  - **Testing** - so you can sleep well
  - **Monitoring** - we all break things, the question is can you catch production failures before a client notices?
 
-
-
 ## Architecture
 [Layerd](https://en.wikipedia.org/wiki/Multitier_architecture) Archtecture
 [Hexagonal](https://blog.octo.com/en/hexagonal-architecture-three-principles-and-an-implementation-example/) Architecture 
 [Domain](https://en.wikipedia.org/wiki/Domain-driven_design) Driven Design - to serve tow functions: 
  A. **Feature (domain) Scope Bounding** - know where a feature start and ends
  B. **Developer Business Proficency** - Know everything about one thing.
+
+## Roadmap
+ - [ ] Typescript bootstrp
+ - [ ] Global error handling
+ - [ ] Application run scripts
+ - [ ] Dockerize
+ - [ ] Configuration service
+ - [ ] Data Access Layer
+ - [ ] Component Structure
+ - [ ] APM
+ - [ ] Logging
+ - [ ] Tests
+ - [ ] Swagger
+ - [ ] Linting
+ - [ ] Caching
+ - [ ] Web Sockets 
+ - [ ] Messaging
